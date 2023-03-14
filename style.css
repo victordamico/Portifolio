@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Moulpali&display=swap');
+
+#item-menu {
+    font-family: 'Moulpali', cursive;
+    background: linear-gradient(180deg, #000000 0%, #010424 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.conteudo-principal {
+    font-size: 100%;
+    background: linear-gradient(180deg, #000423 0%, rgba(0, 13, 83, 0.719588) 99.98%, #000000 99.99%, rgba(15, 15, 15, 0) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+
+}
+
+
+
+.conteudo-secundario {
+    background: linear-gradient(180deg, rgba(15, 15, 15, 0) 0%, #434C7E 0.01%, #000853 100%);
+}
+
+.ceu-estrelado {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-image: url('ceu_estrelado.svg');
+    background-size: cover;
+}
