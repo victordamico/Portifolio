@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Moulpali&display=swap');
-
-#item-menu {
-    font-family: 'Moulpali', cursive;
-    background: linear-gradient(180deg, #000000 0%, #010424 100%);
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
 
 * {
     margin: 0;
@@ -12,28 +8,126 @@
     text-decoration: none;
 }
 
-.conteudo-principal {
-    font-size: 100%;
-    background: linear-gradient(180deg, #000423 0%, rgba(0, 13, 83, 0.719588) 99.98%, #000000 99.99%, rgba(15, 15, 15, 0) 100%);
-    background-size: cover;
-    background-repeat: no-repeat;
+header ul {
+    font-family: 'Moulpali', cursive;
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+header ul a {
+    color: #00365c;
+}
+
+header ul a:hover {
+    color: #ffffff;
+    transition: .3s;
+    text-shadow: 0px 0px 5px #333;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+body {
+    background: linear-gradient(180deg, #5EACE3 0%, rgba(217, 217, 217, 0) 100%);
     min-height: 100vh;
-    position: relative;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
 
 }
 
-
-
-.conteudo-secundario {
-    background: linear-gradient(180deg, rgba(15, 15, 15, 0) 0%, #434C7E 0.01%, #000853 100%);
+main {
+    background: url(./ilha.png)no-repeat;
+    height: 100vh;
+    background-size: 40%;
+    background-position: 0% 30%;
+    animation-name: respiration;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin: auto;
+    max-width: 900px;
 }
 
-.ceu-estrelado {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    height: 30px;
-    background-image: url('ceu_estrelado.svg');
-    background-size: cover;
+
+main section {
+    width: 50%;
+    float: right;
+    margin-top: 5rem;
+    color: #ffffff;
+    text-shadow: 0px 0px 5px #9c9b9b;
+}
+
+main section span {
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+main section .typewriter {
+    color: #3397df;
+    line-height: 25px;
+    overflow: hidden;
+    border-right: .15em solid #3397df;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: type 0.7s steps(40, end), blink-caret .75s step-end infinite;
+    display: inline-block;
+
+
+}
+
+.icon-list {
+    list-style: none;
+    display: flex;
+}
+
+.icon-list img {
+    width: 50px;
+    margin: 10px;
+}
+
+.icon-list img:hover {
+    width: 70px;
+    margin: 0px;
+
+}
+
+@keyframes respiration {
+    from {
+        background-position: 0% 30%;
+    }
+
+    to {
+        background-position: 0% 40%;
+    }
+}
+
+@keyframes type {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 140px;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #3397df;
+    }
 }
