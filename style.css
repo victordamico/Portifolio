@@ -102,14 +102,14 @@ h1 {
 }
 
 main section .typewriter {
-    color: #3397df;
+    /* color: #3397df;
     line-height: 25px;
     overflow: hidden;
     border-right: .15em solid #3397df;
     white-space: nowrap;
     letter-spacing: .15em;
     animation: type 0.7s steps(40, end), blink-caret .75s step-end infinite;
-    display: inline-block;
+    display: inline-block; */
 
 
 
