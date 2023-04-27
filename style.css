@@ -30,6 +30,10 @@ header ul {
 
 header ul a {
     color: #00365c;
+    font-size: 20px;
+    padding: 10px;
+    display: inline-block;
+
 }
 
 header ul a:hover {
@@ -59,11 +63,11 @@ body {
 
 
 main #home {
-    padding: 5rem 0;
+    padding-top: 10rem;
     color: #ffffff;
     text-shadow: 0px 0px 5px #9c9b9b;
     background: linear-gradient(180deg, #5EACE3 0%, rgba(217, 217, 217, 0) 100%);
-    min-height: 100vh;
+    min-height: 600px;
     background-repeat: no-repeat;
 }
 
@@ -188,7 +192,7 @@ main section .typewriter {
 }
 
 section#card-section {
-    padding: 7rem 0;
+    padding: 3rem 0;
     background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(94, 172, 227, 0.21) 100%);
 }
 
@@ -267,6 +271,98 @@ section#card-section {
     position: relative;
     left: 50%;
 
+}
+
+#goal {
+    padding: 10vh 0vh;
+    min-height: 600px;
+}
+
+#goal .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 10vh 0vh;
+    min-height: 600px;
+}
+
+#goal .container-image {
+    position: relative;
+
+
+}
+
+#goal .container-image img {
+    position: absolute;
+    animation-name: respiration2;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+#goal .container-image .drop-bottom {
+    top: 80px;
+    left: 120px;
+    animation-name: unset;
+}
+
+#goal .container-image .character {
+    top: 140px;
+    left: 220px;
+    width: 230px;
+    z-index: 2;
+    animation-delay: 1, 8s;
+}
+
+#goal .container-image .screen {
+    top: 100px;
+    left: 270px;
+    z-index: 1;
+    animation-delay: 1s;
+}
+
+#goal .container-image .planet-element {
+    top: 300px;
+    left: 150px;
+    z-index: 3;
+    animation-delay: .8s;
+}
+
+#goal .container-image .triangle-element {
+    top: 150px;
+    left: 150px;
+    z-index: 4;
+    animation-delay: 2.7s;
+}
+
+#goal .container-image .sphere-element {
+    top: 200px;
+    left: 300px;
+    width: 100px;
+    z-index: 4;
+    animation-delay: 1.7s;
+
+}
+
+@keyframes respiration2 {
+    from {
+        padding-top: 0;
+    }
+
+    to {
+        padding-top: 10px;
+    }
+}
+
+
+#goal .container-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
 }
 
 footer {
