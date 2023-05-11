@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Moulpali&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+main {
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#logo {
+    height: 55px;
+    margin-top: 5px;
+    position: absolute;
+    left: 20px;
+}
+
+
+
+header {
+    background-color: #5EACE3;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0px 0px 13px #333;
+
+}
+
+header ul {
+    font-family: 'Moulpali', cursive;
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+header ul a {
+    color: #00365c;
+    font-size: 20px;
+    padding: 10px;
+    display: inline-block;
+}
+
+header ul a:hover {
+    color: #ffffff;
+    transition: .3s;
+    text-shadow: 0px 0px 5px #333;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin: auto;
+    max-width: 900px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.grid {
+    display: grid;
+}
+
+
+
+
+
+footer {
+    background-color: #0060A6;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff
+}
+
+
+@media (min-width:1440px) {
+    .container {
+        max-width: 1100px;
+    }
+}
+
+@media (max-width:426px) {
+    .container {
+        max-width: 300px;
+    }
+
+    body {
+        background: linear-gradient(180deg, #5EACE3 0%, rgba(217, 217, 217, 0) 100%);
+        background-repeat: no-repeat;
+    }
+}

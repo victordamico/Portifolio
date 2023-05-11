@@ -8,18 +8,20 @@
         content="Hi, I'm Victor, a Python Developer, and this is my portfolio. Here, you'll find my main projects in various languages such as Python, CSS, HTML, C, JS, PHP, and Shell. I'll also share my experiences in the field.">
     <title>My Portfolio - Desenvolvedor Full Stack Victor D'amico</title>
     <meta name="robots" content="index">
-    <link rel="stylesheet" type="text/css" href="style.css?date=23-04-11">
+    <link rel="stylesheet" type="text/css" href="./style/base.css?date=11-05-2023">
+    <link rel="stylesheet" type="text/css" href="./style/home.css?date=23-04-27">
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="container">
+            <a href="#home"><img src="./image/logo.png" alt="Logo" id="logo" title="Home" /></a>
             <ul>
                 <li>
-                    <a href="#home">Home</a>
+                    <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="#Projects">Projects</a>
+                    <a href="project.html">Projects</a>
                 </li>
                 <li>
                     <a href="#Experience">Experience</a>
@@ -33,7 +35,7 @@
 
     <main>
         <section id="home">
-            <div class="container">
+            <div class="container grid">
                 <div class="ilha">
                     <img src="./image/Ilha.png" alt="Ilha" />
                 </div>
@@ -68,8 +70,9 @@
 
         <section id="card-section">
             <div class="container">
+                <img src="./image/balao.png" alt="balao" id="balao" onclick="alert('HAHAHa voce me pegou')">
                 <h2> Titulo</h2>
-                <div class="card-container">
+                <div class="card-container grid">
                     <div class="card">
 
                         <div class="card-header">
@@ -132,15 +135,15 @@
                 <!-- fundo da imagem que o personagem esta  colocar os comentarios em ingles dps -->
                 <div class="container-image">
                     <img class="drop-bottom" src="./image/fundo-goal.png" alt="fundo-goal">
-                    
+
                     <img class="character" src="./image/personagem.png" alt="personagem">
-                    
+
                     <img class="screen" src="./image/screen.png" alt="tela">
-                    
+
                     <img class="planet-element" src="./image/planet-element.png" alt="planeta-elemento">
-                    
+
                     <img class="triangle-element" src="./image/triangle-element.png" alt="triangulo-elemento">
-                    
+
                     <img class="sphere-element" src="./image/sphere-element.png" alt="esfera-elemento">
                 </div>
                 <div class="container-text">
@@ -167,16 +170,13 @@
 
     </footer>
     <!-- Google tag (gtag.js) -->
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Z11QWB1Y7"></script>
+    <script src="./analytics.js"></script>
+
+
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-7Z11QWB1Y7');
-
         //TYPEWRITER---------------------------------
-
         var TxtType = function (el, toRotate, period) {
             this.toRotate = toRotate;
             this.el = el;
@@ -226,17 +226,13 @@
         window.onload = function () {
             var elements = document.getElementsByClassName('typewrite');
             for (var i = 0; i < elements.length; i++) {
-                var toRotate = elements[i].getAttribute('data-type');
-                var period = elements[i].getAttribute('data-period');
-                if (toRotate) {
-                    new TxtType(elements[i], JSON.parse(toRotate), period);
-                }
-            }
-            // INJECT CSS
-            var css = document.createElement("style");
-            css.type = "text/css";
-            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-            document.body.appendChild(css);
+                var toRotate = elements[i].getAttribute('data-type'); var
+                    period = elements[i].getAttribute('data-period'); if (toRotate) {
+                        new TxtType(elements[i], JSON.parse(toRotate),
+                            period);
+                    }
+            } // INJECT CSS var css=document.createElement("style"); css.type="text/css" ;
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}"; document.body.appendChild(css);
         };
     </script>
 

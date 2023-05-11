@@ -1,0 +1,8 @@
+#section-project .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+#section-project .grid>div:nth-child(2) {
+    margin-top: 150px;
+}
