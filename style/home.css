@@ -1,78 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Moulpali&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-header {
-    background-color: #5EACE3;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    box-shadow: 0px 0px 13px #333;
+#balao {
+    position: relative;
+    animation-name: balao;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 
 }
-
-header ul {
-    font-family: 'Moulpali', cursive;
-    display: flex;
-    list-style: none;
-    gap: 1rem;
-}
-
-header ul a {
-    color: #00365c;
-    font-size: 20px;
-    padding: 10px;
-    display: inline-block;
-
-}
-
-header ul a:hover {
-    color: #ffffff;
-    transition: .3s;
-    text-shadow: 0px 0px 5px #333;
-}
-
-header nav {
-    display: flex;
-    justify-content: space-around;
-}
-
-
-body {
-    font-family: 'Poppins', sans-serif;
-
-
-}
-
-
-
-.container {
-    margin: auto;
-    max-width: 900px;
-}
-
 
 main #home {
     padding-top: 10rem;
     color: #ffffff;
     text-shadow: 0px 0px 5px #9c9b9b;
-    background: linear-gradient(180deg, #5EACE3 0%, rgba(217, 217, 217, 0) 100%);
-    min-height: 600px;
+    background: rgba(97, 173, 228, 0.42);
+    min-height: 500px;
     background-repeat: no-repeat;
 }
 
 main #home .container {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
 }
@@ -100,30 +43,11 @@ main section span.ima {
 }
 
 
-h1 {
-    font-size: 40px;
-    line-height: 40px;
-}
-
-main section .typewriter {
-    /* color: #3397df;
-    line-height: 25px;
-    overflow: hidden;
-    border-right: .15em solid #3397df;
-    white-space: nowrap;
-    letter-spacing: .15em;
-    animation: type 0.7s steps(40, end), blink-caret .75s step-end infinite;
-    display: inline-block; */
-
-
-
-}
-
 
 #id_download a {
     padding: 1rem;
     background-color: #5EACE3;
-    border-radius: 2rem;
+    border-radius: 1rem;
     color: #fff;
     box-shadow: 1px 3px #333;
     display: inline-block;
@@ -170,6 +94,28 @@ main section .typewriter {
     }
 }
 
+@keyframes balao {
+    from {
+        left: -20vw;
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-100%);
+    }
+
+    50% {
+        transform: translateY(0%);
+    }
+
+    to {
+        left: 100vw;
+        transform: translateY(-100%);
+    }
+}
+
+
+
 @keyframes blink-caret {
 
     from,
@@ -191,9 +137,10 @@ main section .typewriter {
 
 }
 
-section#card-section {
-    padding: 3rem 0;
-    background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(94, 172, 227, 0.21) 100%);
+#card-section {
+    padding: 10rem 0;
+    background: linear-gradient(180deg, #BDDDF4 0%, rgba(207, 228, 243, 0.68) 50%, #FFFFFF 100%);
+    overflow: hidden;
 }
 
 #card-section .card img {
@@ -202,7 +149,6 @@ section#card-section {
 }
 
 .card-container {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 4rem;
 
@@ -365,34 +311,11 @@ section#card-section {
     gap: 2rem;
 }
 
-footer {
-    background-color: #0060A6;
-    padding: 20px;
-    text-align: center;
-    color: #ffffff
-}
-
-
-@media (min-width:1440px) {
-    .container {
-        max-width: 1100px;
-    }
-}
-
 @media (max-width:426px) {
-    .container {
-        max-width: 300px;
-    }
 
     main #home .container {
-        display: grid;
         grid-template-columns: 1fr;
 
-    }
-
-    body {
-        background: linear-gradient(180deg, #5EACE3 0%, rgba(217, 217, 217, 0) 100%);
-        background-repeat: no-repeat;
     }
 
     .card-container {
