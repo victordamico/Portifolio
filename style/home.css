@@ -10,7 +10,7 @@ main #home {
     padding-top: 10rem;
     color: #ffffff;
     text-shadow: 0px 0px 5px #9c9b9b;
-    background: rgba(97, 173, 228, 0.42);
+    background: #BDDDF4;
     min-height: 500px;
     background-repeat: no-repeat;
 }
@@ -43,7 +43,7 @@ main section span.ima {
 }
 
 
-
+/* Botão Dowload */
 #id_download a {
     display: inline-block;
     padding: 0.5 1rem;
@@ -79,8 +79,19 @@ main section span.ima {
 
 }
 
+.bi-linkedin {
+    margin-top: 10px;
+    width: 50px;
+    margin: 10px;
+    color: #5EACE3;
+}
 
+.bi-linkedin:hover {
+    width: 70px;
+    margin: 0px;
+}
 
+/* Animação */
 
 @keyframes respiration {
     from {
@@ -137,7 +148,7 @@ main section span.ima {
 }
 
 
-
+/* Cards */
 
 #card-section h2 {
     text-align: center;
@@ -213,7 +224,8 @@ main section span.ima {
     left: 50%;
     color: #00365c;
 }
-#card-section a:hover{
+
+#card-section a:hover {
     color: #FFFFFF;
 }
 

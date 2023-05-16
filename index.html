@@ -8,6 +8,7 @@
         content="Hi, I'm Victor, a Python Developer, and this is my portfolio. Here, you'll find my main projects in various languages such as Python, CSS, HTML, C, JS, PHP, and Shell. I'll also share my experiences in the field.">
     <title>My Portfolio - Desenvolvedor Full Stack Victor D'amico</title>
     <meta name="robots" content="index">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="./style/base.css?date=11-05-2023">
     <link rel="stylesheet" type="text/css" href="./style/home.css?date=23-04-27">
     <link rel="shortcut icon" href="./image/icon-logo.png" type="image/x-icon">
@@ -32,6 +33,14 @@
                     <a href="#Contacts">Contacts</a>
                 </li>
             </ul>
+            <div>
+                <input type="checkbox" name="change-theme" id="change-theme" />
+                <label for="change-theme" id="change-theme-label">
+                    <i class="bi bi-sun"></i>
+                    <i class="bi bi-moon"></i>
+                </label>
+
+            </div>
         </nav>
     </header>
 
@@ -237,7 +246,7 @@
             css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}"; document.body.appendChild(css);
         };
     </script>
-
+    <script src="scripts.js" defer></script>
 </body>
 
 </html>
