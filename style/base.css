@@ -8,12 +8,18 @@
     text-decoration: none;
 }
 
+input[type="checkbox"] {
+    display: none;
+}
+
+
 main {
     min-height: 100vh;
 }
 
 html {
     scroll-behavior: smooth;
+    transition: 0.3s;
 }
 
 #logo {
@@ -49,9 +55,8 @@ header ul a {
 }
 
 header ul a:hover {
-    color: #ffffff;
+    text-decoration: overline;
     transition: .3s;
-    text-shadow: 0px 0px 5px #333;
 }
 
 header nav {
@@ -63,6 +68,7 @@ header nav {
 
 body {
     font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
 }
 
 .container {
@@ -80,8 +86,91 @@ h1 {
 }
 
 
+/* Darck mod */
+.dark,
+.dark header {
+    background-color: #263238;
+    color: #fff;
+}
+
+.dark header a {
+    color: #fff;
+}
 
 
+
+#change-theme-label {
+    height: 55px;
+    margin-top: 18px;
+    position: absolute;
+    right: 20px;
+    color: #294B63;
+}
+
+body.dark .bi-sun {
+    color: #ddd;
+}
+
+body.dark .bi-moon {
+    color: #fff;
+}
+
+body:not(.dark) .bi-sun {
+    color: #fff;
+}
+
+body.dark header ul a:hover {
+    /* color: #4D7285; */
+    text-decoration: overline;
+}
+
+body.dark main #home {
+    background-color: #002642;
+}
+
+body.dark #card-section {
+    background: linear-gradient(180deg, #002642 0%, #002642 33.33%, #263238 84.83%, #333333 96.28%);
+}
+
+body.dark #goal {
+    background: #333
+}
+
+
+body.dark #card-section .card .card-header {
+    background-color: #333;
+}
+
+body.dark #card-section .card {
+    background-color: #333;
+
+}
+
+body.dark #id_download a {
+    background-color: #016cb8;
+    box-shadow: 2px 2px 1px 1px #134a71;
+}
+
+body.dark#id_download a:hover {
+    box-shadow: 0 0 0 0 #082b44, inset 3px 3px 3px #082b44;
+    transform: translate(3px, 3px);
+}
+
+body.dark #card-section h2 {
+    color: #016cb8;
+    text-shadow: 0px 0px 0px;
+}
+
+
+body.dark #card-section .card {
+    border-bottom: 10px solid #016cb8;
+    border-top: 5px solid #016cb8;
+}
+
+body.dark #card-section a {
+    background-color: #016cb8;
+
+}
 
 footer {
     background-color: #0060A6;

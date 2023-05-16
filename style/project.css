@@ -39,9 +39,13 @@ h2 {
     text-shadow: 0px 0px 5px #9c9b9b;
 }
 
+.grid-item img {
+    width: 80%;
+}
+
 
 .grid-item img:hover {
-    width: 240px;
+    width: 100%;
     margin: 0px;
 
 }
