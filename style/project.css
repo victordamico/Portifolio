@@ -1,8 +1,47 @@
 #section-project .grid {
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+
 
 }
 
 #section-project .grid>div:nth-child(2) {
     margin-top: 150px;
+}
+
+.mw-100 {
+    max-width: 100%;
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+}
+
+body {
+    background: rgba(97, 173, 228, 0.42);
+}
+
+h1 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    text-shadow: 0px 0px 5px #9c9b9b;
+    ;
+}
+
+h2 {
+    font-size: 15px;
+    text-shadow: 0px 0px 5px #9c9b9b;
+}
+
+
+.grid-item img:hover {
+    width: 240px;
+    margin: 0px;
+
 }

@@ -1,7 +1,7 @@
 #balao {
     position: relative;
     animation-name: balao;
-    animation-duration: 10s;
+    animation-duration: 9s;
     animation-iteration-count: infinite;
 
 }
@@ -45,17 +45,22 @@ main section span.ima {
 
 
 #id_download a {
-    padding: 1rem;
-    background-color: #5EACE3;
-    border-radius: 1rem;
-    color: #fff;
-    box-shadow: 1px 3px #333;
     display: inline-block;
-    transition: 1s;
+    padding: 0.5 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: #5EACE3;
+    color: #fff;
+    border: 0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    box-shadow: 2px 2px 1px 1px #005D9F;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 #id_download a:hover {
-    box-shadow: none;
+    box-shadow: 0 0 0 0 #005D9F, inset 3px 3px 3px #005D9F;
+    transform: translate(3px, 3px);
 }
 
 .icon-list {
@@ -73,6 +78,9 @@ main section span.ima {
     margin: 0px;
 
 }
+
+
+
 
 @keyframes respiration {
     from {
@@ -96,7 +104,7 @@ main section span.ima {
 
 @keyframes balao {
     from {
-        left: -20vw;
+        left: -19vw;
         transform: translateY(0);
     }
 
@@ -110,7 +118,7 @@ main section span.ima {
 
     to {
         left: 100vw;
-        transform: translateY(-100%);
+        transform: translateY(-90%);
     }
 }
 
@@ -134,11 +142,14 @@ main section span.ima {
 #card-section h2 {
     text-align: center;
     margin-bottom: 5rem;
+    color: #64AFE4;
+    text-shadow: 0px 0px 70px #fff;
+    font-size: 30px;
 
 }
 
 #card-section {
-    padding: 10rem 0;
+    padding-top: 7rem;
     background: linear-gradient(180deg, #BDDDF4 0%, rgba(207, 228, 243, 0.68) 50%, #FFFFFF 100%);
     overflow: hidden;
 }
@@ -180,28 +191,12 @@ main section span.ima {
     position: relative;
 }
 
-
-#card-section .card .card-body {
-    /* transition: 1s;
-    position: absolute;
-    top: 0;
-    left: 5px;
-    right: 5px;
-    z-index: 0;
-    opacity: 0;
-    transition-delay: 0.5s; */
-
-}
-
 #card-section .card:hover {
     height: 500px;
 
 
 
 }
-
-
-
 
 #card-section h3 {
     margin-bottom: 2rem;
@@ -216,11 +211,14 @@ main section span.ima {
     transform: translateX(-50%);
     position: relative;
     left: 50%;
-
+    color: #00365c;
+}
+#card-section a:hover{
+    color: #FFFFFF;
 }
 
 #goal {
-    padding: 10vh 0vh;
+    /* padding: 10vh 0vh; */
     min-height: 600px;
 }
 
