@@ -89,7 +89,7 @@ h1 {
 /* Darck mod */
 .dark,
 .dark header {
-    background-color: #263238;
+    background-color: #002642;
     color: #fff;
 }
 
@@ -132,6 +132,7 @@ body.dark #card-section {
     background: linear-gradient(180deg, #002642 0%, #002642 33.33%, #263238 84.83%, #333333 96.28%);
 }
 
+
 body.dark #goal {
     background: #333
 }
@@ -171,6 +172,10 @@ body.dark #card-section a {
     background-color: #016cb8;
 
 }
+
+/* body.dark card-container grid {
+    background-color: #002642;
+} ARRUMAR */
 
 footer {
     background-color: #0060A6;

@@ -41,8 +41,10 @@ h1 {
 .card-container {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
+    padding-top: 5rem;
     padding-bottom: 5rem;
 }
+
 
 
 #card-section .card {
