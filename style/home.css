@@ -230,8 +230,9 @@ main section span.ima {
 }
 
 #goal {
-    /* padding: 10vh 0vh; */
     min-height: 600px;
+    background-color: #fff;
+    padding-bottom: 5rem;
 }
 
 #goal .container {
