@@ -10,7 +10,7 @@
     <meta name="robots" content="index">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="./style/base.css?date=11-05-2023">
-    <link rel="stylesheet" type="text/css" href="./style/project.css">
+    <link rel="stylesheet" type="text/css" href="./style/contact.css">
     <link rel="shortcut icon" href="./image/icon-logo.png" type="image/x-icon">
 </head>
 
@@ -29,7 +29,7 @@
                     <a href="#Experience">Experience</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contacts</a>
+                    <a href="#Contacts">Contacts</a>
                 </li>
             </ul>
             <div>
@@ -38,30 +38,28 @@
                     <i class="bi bi-sun"></i>
                     <i class="bi bi-moon"></i>
                 </label>
+
             </div>
         </nav>
     </header>
 
     <main>
-        <section id="section-project">
-            <div class="container">
-                <div>
-                    <h1>Projects</h1>
-                </div>
-                <div class="grid">
-                    <div class="grid-item">
-                        <h2>title1</h2>
-                        <img src="./image/project_ilha2.png" alt="" class="mw-100">
-                    </div>
-                    <div class="grid-item">
-                        <h2>title2</h2>
-                        <img src="./image/project_ilha1.png" alt="" class="mw-100">
-                    </div>
-                    <div class="grid-item">
-                        <h2>title3</h2>
-                        <img src="./image/project_ilha3.png" alt="" class="mw-100">
-                    </div>
-                </div>
+        <section id="section-contact">
+            <div class="container-contact">
+                <h2>Contact</h2>
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <label>Name</label>
+                    <input type="text" name="name" placeholder="Type your name" autocomplete="off" required>
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Type your email" required>
+                    <label>Menssage</label>
+                    <textarea name="message" cols="30" rows="10" placeholder="Type your menssage" required></textarea>
+                    <button type="submit">to_send</button>
+
+
+                    <input type="hidden" name="accessKey" value="1bb45450-8e98-485d-8e8f-b9b21908b6d3">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/thanks.html">
+                </form>
             </div>
         </section>
     </main>
@@ -77,8 +75,8 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Z11QWB1Y7"></script>
     <script src="./analytics.js"></script>
-    <script src="scripts.js" defer></script>
 
+    <script src="scripts.js" defer></script>
 </body>
 
 </html>
