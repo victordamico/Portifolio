@@ -89,7 +89,7 @@ h1 {
 /* Darck mod */
 .dark,
 .dark header {
-    background-color: #002642;
+    background-color: #333;
     color: #fff;
 }
 
@@ -97,6 +97,33 @@ h1 {
     color: #fff;
 }
 
+body.dark #section-contact {
+    background-color: #002642;
+}
+
+body.dark #section-contact .container-contact {
+    background: rgba(51, 51, 51, 0.88);
+}
+
+
+
+body.dark #section-contact h2 {
+    color: #fff;
+}
+
+body.dark #section-contact form label {
+    color: #fff;
+}
+
+body.dark #section-contact form button {
+    background-color: #016cb8;
+    box-shadow: 2px 2px 1px 1px #007dd6;
+}
+
+body.dark #section-contact form button:hover {
+    transform: translate(3px, 3px);
+    box-shadow: 0 0 0 0 #00111a, inset 3px 3px 3px #00111a;
+}
 
 
 #change-theme-label {
@@ -128,6 +155,11 @@ body.dark main #home {
     background-color: #002642;
 }
 
+body.dark #home .bi:before {
+    color: #016cb8
+}
+
+
 body.dark #card-section {
     background: linear-gradient(180deg, #002642 0%, #00223B 47.2%, #011829 87.82%);
 }
@@ -149,12 +181,12 @@ body.dark #card-section .card {
 
 body.dark #id_download a {
     background-color: #016cb8;
-    box-shadow: 2px 2px 1px 1px #134a71;
+    box-shadow: 2px 2px 1px 1px #007dd6;
 }
 
-body.dark#id_download a:hover {
-    box-shadow: 0 0 0 0 #082b44, inset 3px 3px 3px #082b44;
+body.dark #id_download a:hover {
     transform: translate(3px, 3px);
+    box-shadow: 0 0 0 0 #00111a, inset 3px 3px 3px #00111a;
 }
 
 body.dark #card-section h2 {

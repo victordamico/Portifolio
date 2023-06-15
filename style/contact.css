@@ -36,7 +36,7 @@ section form {
 }
 
 form label {
-    color: #f5f5ff;
+    color: #00365c;
     font-size: 17px;
     margin-bottom: 4px;
 }
@@ -47,6 +47,7 @@ form input {
     border: 0;
     font-size: 15px;
     transition: all 0.5s;
+    background: rgba(177, 177, 177, 0.24);
 }
 
 form input:focus {
@@ -61,11 +62,12 @@ form textarea {
     margin-bottom: 30px;
     transition: all 0.5;
     resize: none;
+    background: rgba(177, 177, 177, 0.24);
 }
 
 form textarea:focus {
     border-radius: 16px;
-    
+
 }
 
 form button {
