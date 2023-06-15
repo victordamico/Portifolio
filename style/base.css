@@ -125,6 +125,9 @@ body.dark #section-contact form button:hover {
     box-shadow: 0 0 0 0 #00111a, inset 3px 3px 3px #00111a;
 }
 
+body.dark {
+    background-color: #002642;
+}
 
 #change-theme-label {
     height: 55px;
